@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3 – Sự kiện</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "container">
+        <h1> Bài 3 - Xử lý sự kiện</h1>
+    <div class="card">
+        <h2>A. Bộ đếm &amp; xem trước</h2>
+        <button id="btnGiam" class="btn">-</button>
+        <span id="soDem">0</span>
+        <button id="btnTang" class="btn">+</button>
+        <button id="btnReset" class="btn-gold">Đặt lại</button>
+
+        <p style="margin-top:16px">
+            <input id="nhapTen" type="text" placeholder="Nhập tên của bạn">
+            <span> Xin chào, <b id="xemTruoc">bạn</b>!</span>
+            <small id="demKyTu">(0/30)</small>
+        </p>
+        <p id="phimVuaNhan">Nhấn một phím bất kỳ...</p>
+    </div>
+    <div class="card"style="margin-top: 20px;">
+        <h2>B. Danh sách công việc</h2>
+        <form id="formTodo">
+            <input id="NhapViec" placeholder="Việc cần làm..." autocomplete="off">
+            <button class="btn">Thêm</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

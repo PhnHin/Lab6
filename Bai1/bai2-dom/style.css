@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    background: #f5f6fa;
+    color: #263238;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#tieuDe {
+    margin-bottom: 8px;
+}
+
+#tongGiaTriKho {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin: 12px 0 20px;
+    padding: 0;
+}
+
+#menu li {
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: #e3e7f4;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    padding: 16px;
+    border: 1px solid #dfe3eb;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.sp-card h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+.gia {
+    margin: 0;
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.gia-cu {
+    margin: 0 0 4px;
+    color: #6b7280;
+}
+
+.badge {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background: #d9f2e3;
+    color: #1e7a46;
+    font-size: 12px;
+}
+
+.sp-card.het-hang {
+    opacity: 0.65;
+}
+
+.sp-card.het-hang .badge {
+    background: #fbe0e0;
+    color: #b02a2a;
+}
+
+.noi-bat {
+    border: 2px solid #f2b705;
+}
+
+.bang-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th,
+td {
+    padding: 10px 12px;
+    border: 1px solid #dfe3eb;
+    text-align: left;
+}
+
+th {
+    background: #e3e7f4;
+}
+
+section {
+    margin-top: 28px;
+}

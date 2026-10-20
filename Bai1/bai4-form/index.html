@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bài 4 – Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Đăng ký tham gia CLB Lập trình</h1>
+
+        <form id="formDangKy" class="card" novalidate>
+            <div class="nhom">
+                <label for="hoTen">Họ và tên *</label>
+                <input id="hoTen" name="hoTen" autocomplete="name">
+                <small class="loi"></small>
+            </div>
+
+            <div class="nhom">
+                <label for="ngaySinh">Ngày sinh *</label>
+                <input id="ngaySinh" name="ngaySinh" type="date" autocomplete="bday">
+                <small class="loi"></small>
+            </div>
+
+            <div class="nhom">
+                <label for="email">Email *</label>
+                <input id="email" name="email" type="email" autocomplete="email">
+                <small class="loi"></small>
+            </div>
+
+            <div class="nhom">
+                <label for="dienThoai">Số điện thoại *</label>
+                <input id="dienThoai" name="dienThoai" type="tel" autocomplete="tel">
+                <small class="loi"></small>
+            </div>
+
+            <div class="nhom">
+                <label for="nganh">Ngành học *</label>
+                <select id="nganh" name="nganh">
+                    <option value="">-- Chọn ngành --</option>
+                    <option value="KTPM">Kỹ thuật phần mềm</option>
+                    <option value="HTTT">Hệ thống thông tin</option>
+                    <option value="MMT">Mạng máy tính</option>
+                </select>
+                <small class="loi"></small>
+            </div>
+
+            <div class="nhom">
+                <label for="matKhau">Mật khẩu *</label>
+                <div class="password-wrap">
+                    <input id="matKhau" name="matKhau" type="password" autocomplete="new-password">
+                    <button class="btn btn-hien" type="button" data-toggle-password="matKhau"
+                        aria-label="Hiện mật khẩu" aria-pressed="false">👁 Hiện</button>
+                </div>
+                <small id="doManh" class="do-manh" aria-live="polite">Độ mạnh: Chưa nhập</small>
+                <small class="loi"></small>
+            </div>
+
+            <div class="nhom">
+                <label for="xacNhan">Xác nhận mật khẩu *</label>
+                <div class="password-wrap">
+                    <input id="xacNhan" name="xacNhan" type="password" autocomplete="new-password">
+                    <button class="btn btn-hien" type="button" data-toggle-password="xacNhan"
+                        aria-label="Hiện xác nhận mật khẩu" aria-pressed="false">👁 Hiện</button>
+                </div>
+                <small class="loi"></small>
+            </div>
+
+            <div class="nhom nhom-checkbox">
+                <label for="dongY">
+                    <input type="checkbox" id="dongY" name="dongY">
+                    Tôi đồng ý với nội quy CLB *
+                </label>
+                <small class="loi"></small>
+            </div>
+
+            <button class="btn btn-gold" type="submit">Đăng ký</button>
+        </form>
+
+        <section id="ketQua" class="card ket-qua hidden" aria-live="polite"></section>
+
+        <section class="danh-sach">
+            <h2>Danh sách người đăng ký</h2>
+            <div id="bangDangKy" class="bang-wrapper">
+                <p class="empty-state">Chưa có người đăng ký.</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

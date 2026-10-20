@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    background: #f5f6fa;
+    color: #263238;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid #e3e7f4;
+    border-radius: 10px;
+    background: #fff;
+}
+
+#formDangKy {
+    max-width: 520px;
+}
+
+.nhom {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+}
+
+.nhom label {
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.nhom input:not([type="checkbox"]),
+.nhom select {
+    width: 100%;
+}
+
+input,
+select {
+    min-height: 38px;
+    padding: 8px 10px;
+    border: 1px solid #cbd2e2;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.nhom .loi {
+    min-height: 18px;
+    color: #d64545;
+    font-size: 13px;
+}
+
+.nhom.co-loi input,
+.nhom.co-loi select {
+    border-color: #d64545;
+    background: #fff6f6;
+}
+
+.nhom.hop-le input,
+.nhom.hop-le select {
+    border-color: #2e9e5b;
+}
+
+.nhom-checkbox label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nhom-checkbox input {
+    width: 16px;
+    height: 16px;
+    min-height: 0;
+    margin: 0;
+}
+
+.password-wrap {
+    display: flex;
+    gap: 8px;
+}
+
+.password-wrap input {
+    flex: 1;
+    min-width: 0;
+}
+
+.btn {
+    padding: 9px 13px;
+    border: 1px solid #cbd2e2;
+    border-radius: 6px;
+    background: #f7f8fc;
+    color: #263238;
+    font: inherit;
+    cursor: pointer;
+}
+
+.btn:hover {
+    filter: brightness(0.96);
+}
+
+.btn-gold {
+    border-color: #e0a900;
+    background: #f2b705;
+    color: #242424;
+}
+
+.btn-hien {
+    white-space: nowrap;
+}
+
+.do-manh {
+    min-height: 20px;
+    padding-top: 4px;
+    font-size: 13px;
+}
+
+.do-manh.yeu {
+    color: #d64545;
+}
+
+.do-manh.trung-binh {
+    color: #a56a00;
+}
+
+.do-manh.manh {
+    color: #2e9e5b;
+}
+
+.hidden {
+    display: none;
+}
+
+.ket-qua {
+    max-width: 520px;
+    margin-top: 20px;
+    border-left: 5px solid #2e9e5b;
+}
+
+.ket-qua h2 {
+    margin-top: 0;
+}
+
+.danh-sach {
+    margin-top: 28px;
+}
+
+.bang-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th,
+td {
+    padding: 10px 12px;
+    border: 1px solid #dfe3eb;
+    text-align: left;
+}
+
+th {
+    background: #e3e7f4;
+}
+
+.empty-state {
+    color: #697386;
+}
+
+@media (max-width: 560px) {
+    body {
+        padding: 12px;
+    }
+
+    .card {
+        padding: 14px;
+    }
+}

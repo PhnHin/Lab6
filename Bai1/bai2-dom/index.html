@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bài 2 – DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1 id="tieuDe">Cửa hàng</h1>
+        <p id="tongGiaTriKho"></p>
+        <p class="mo-ta">Đang tải danh sách sản phẩm...</p>
+        <p>Tổng: <b id="tongSP">0</b> sản phẩm – Hết hàng: <b id="hetHang">0</b></p>
+
+        <ul id="menu">
+            <li>Laptop</li>
+            <li>Phụ kiện</li>
+            <li>Màn hình</li>
+        </ul>
+
+        <section aria-labelledby="tieuDeDanhSach">
+            <h2 id="tieuDeDanhSach">Danh sách sản phẩm</h2>
+            <div id="dsSanPham" class="grid"></div>
+        </section>
+
+        <section aria-labelledby="tieuDeBang">
+            <h2 id="tieuDeBang">Bảng sản phẩm</h2>
+            <div id="bangSanPham"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
